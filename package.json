@@ -1,0 +1,49 @@
+{
+  "name": "@ovencord/mustache",
+  "version": "1.0.0",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ovencord/mustache.git"
+  },
+  "description": "High-performance, Bun-native refactor of mustache.js. Purged legacy bloat, optimized for raw string rendering with zero-overhead. ",
+  "keywords": [
+    "mustache",
+    "template",
+    "templates",
+    "bun"
+  ],
+  "author": {
+    "name": "Luigi Colantuono",
+    "url": "https://github.com/LuigiColantuono"
+  },
+  "homepage": "https://github.com/LuigiColantuono",
+  "funding": {
+    "type": "individual",
+    "url": "https://paypal.me/l0g4n7"
+  },
+  "type": "module",
+  "exports": {
+    ".": "./mustache.js",
+    "./mustache.js": "./mustache.js"
+  },
+  "main": "mustache.js",
+  "types": "mustache.d.ts",
+  "files": [
+    "mustache.js",
+    "mustache.d.ts"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
+  "scripts": {
+    "lint": "eslint ."
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "@types/bun": "latest",
+    "eslint": "^9.39.2",
+    "globals": "^17.2.0",
+    "typescript": "^5.9.3",
+    "typescript-eslint": "^8.54.0"
+  }
+}
