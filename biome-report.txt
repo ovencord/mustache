@@ -1,0 +1,256 @@
+mustache.d.ts:4:17 lint/suspicious/noShadowRestrictedNames ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+  × Do not shadow the global "escape" property.
+  
+    3 │ export function clearCache(): void;
+  > 4 │ export function escape(value: string): string;
+      │                 ^^^^^^
+    5 │ export function parse(template: string, tags?: string[]): any[];
+    6 │ export function render(template: string, view: any, partials?: any, config?: any): string;
+  
+  i Consider renaming this variable. It's easy to confuse the origin of variables when they're named after a known global.
+  
+
+mustache.d.ts:5:59 lint/suspicious/noExplicitAny ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+  × Unexpected any. Specify a different type.
+  
+    3 │ export function clearCache(): void;
+    4 │ export function escape(value: string): string;
+  > 5 │ export function parse(template: string, tags?: string[]): any[];
+      │                                                           ^^^
+    6 │ export function render(template: string, view: any, partials?: any, config?: any): string;
+    7 │ 
+  
+  i any disables many type checking rules. Its use should be avoided.
+  
+
+mustache.d.ts:6:48 lint/suspicious/noExplicitAny ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+  × Unexpected any. Specify a different type.
+  
+    4 │ export function escape(value: string): string;
+    5 │ export function parse(template: string, tags?: string[]): any[];
+  > 6 │ export function render(template: string, view: any, partials?: any, config?: any): string;
+      │                                                ^^^
+    7 │ 
+    8 │ export class Scanner {
+  
+  i any disables many type checking rules. Its use should be avoided.
+  
+
+mustache.d.ts:6:64 lint/suspicious/noExplicitAny ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+  × Unexpected any. Specify a different type.
+  
+    4 │ export function escape(value: string): string;
+    5 │ export function parse(template: string, tags?: string[]): any[];
+  > 6 │ export function render(template: string, view: any, partials?: any, config?: any): string;
+      │                                                                ^^^
+    7 │ 
+    8 │ export class Scanner {
+  
+  i any disables many type checking rules. Its use should be avoided.
+  
+
+mustache.d.ts:6:78 lint/suspicious/noExplicitAny ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+  × Unexpected any. Specify a different type.
+  
+    4 │ export function escape(value: string): string;
+    5 │ export function parse(template: string, tags?: string[]): any[];
+  > 6 │ export function render(template: string, view: any, partials?: any, config?: any): string;
+      │                                                                              ^^^
+    7 │ 
+    8 │ export class Scanner {
+  
+  i any disables many type checking rules. Its use should be avoided.
+  
+
+mustache.d.ts:19:8 lint/suspicious/noExplicitAny ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+  × Unexpected any. Specify a different type.
+  
+    18 │ export class Context {
+  > 19 │ 	view: any;
+       │ 	      ^^^
+    20 │ 	parent: Context | undefined;
+    21 │ 	constructor(view: any, parentContext?: Context);
+  
+  i any disables many type checking rules. Its use should be avoided.
+  
+
+mustache.d.ts:21:20 lint/suspicious/noExplicitAny ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+  × Unexpected any. Specify a different type.
+  
+    19 │ 	view: any;
+    20 │ 	parent: Context | undefined;
+  > 21 │ 	constructor(view: any, parentContext?: Context);
+       │ 	                  ^^^
+    22 │ 	push(view: any): Context;
+    23 │ 	lookup(name: string): any;
+  
+  i any disables many type checking rules. Its use should be avoided.
+  
+
+mustache.d.ts:22:13 lint/suspicious/noExplicitAny ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+  × Unexpected any. Specify a different type.
+  
+    20 │ 	parent: Context | undefined;
+    21 │ 	constructor(view: any, parentContext?: Context);
+  > 22 │ 	push(view: any): Context;
+       │ 	           ^^^
+    23 │ 	lookup(name: string): any;
+    24 │ }
+  
+  i any disables many type checking rules. Its use should be avoided.
+  
+
+mustache.d.ts:23:24 lint/suspicious/noExplicitAny ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+  × Unexpected any. Specify a different type.
+  
+    21 │ 	constructor(view: any, parentContext?: Context);
+    22 │ 	push(view: any): Context;
+  > 23 │ 	lookup(name: string): any;
+       │ 	                      ^^^
+    24 │ }
+    25 │ 
+  
+  i any disables many type checking rules. Its use should be avoided.
+  
+
+mustache.d.ts:29:44 lint/suspicious/noExplicitAny ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+  × Unexpected any. Specify a different type.
+  
+    27 │ 	constructor();
+    28 │ 	clearCache(): void;
+  > 29 │ 	parse(template: string, tags?: string[]): any[];
+       │ 	                                          ^^^
+    30 │ 	render(template: string, view: any, partials?: any, config?: any): string;
+    31 │ 	renderTokens(tokens: any[], context: Context, partials?: any, originalTemplate?: any, config?: any): string;
+  
+  i any disables many type checking rules. Its use should be avoided.
+  
+
+mustache.d.ts:30:33 lint/suspicious/noExplicitAny ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+  × Unexpected any. Specify a different type.
+  
+    28 │ 	clearCache(): void;
+    29 │ 	parse(template: string, tags?: string[]): any[];
+  > 30 │ 	render(template: string, view: any, partials?: any, config?: any): string;
+       │ 	                               ^^^
+    31 │ 	renderTokens(tokens: any[], context: Context, partials?: any, originalTemplate?: any, config?: any): string;
+    32 │ }
+  
+  i any disables many type checking rules. Its use should be avoided.
+  
+
+mustache.d.ts:30:49 lint/suspicious/noExplicitAny ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+  × Unexpected any. Specify a different type.
+  
+    28 │ 	clearCache(): void;
+    29 │ 	parse(template: string, tags?: string[]): any[];
+  > 30 │ 	render(template: string, view: any, partials?: any, config?: any): string;
+       │ 	                                               ^^^
+    31 │ 	renderTokens(tokens: any[], context: Context, partials?: any, originalTemplate?: any, config?: any): string;
+    32 │ }
+  
+  i any disables many type checking rules. Its use should be avoided.
+  
+
+mustache.d.ts:30:63 lint/suspicious/noExplicitAny ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+  × Unexpected any. Specify a different type.
+  
+    28 │ 	clearCache(): void;
+    29 │ 	parse(template: string, tags?: string[]): any[];
+  > 30 │ 	render(template: string, view: any, partials?: any, config?: any): string;
+       │ 	                                                             ^^^
+    31 │ 	renderTokens(tokens: any[], context: Context, partials?: any, originalTemplate?: any, config?: any): string;
+    32 │ }
+  
+  i any disables many type checking rules. Its use should be avoided.
+  
+
+mustache.d.ts:31:23 lint/suspicious/noExplicitAny ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+  × Unexpected any. Specify a different type.
+  
+    29 │ 	parse(template: string, tags?: string[]): any[];
+    30 │ 	render(template: string, view: any, partials?: any, config?: any): string;
+  > 31 │ 	renderTokens(tokens: any[], context: Context, partials?: any, originalTemplate?: any, config?: any): string;
+       │ 	                     ^^^
+    32 │ }
+    33 │ 
+  
+  i any disables many type checking rules. Its use should be avoided.
+  
+
+mustache.d.ts:31:59 lint/suspicious/noExplicitAny ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+  × Unexpected any. Specify a different type.
+  
+    29 │ 	parse(template: string, tags?: string[]): any[];
+    30 │ 	render(template: string, view: any, partials?: any, config?: any): string;
+  > 31 │ 	renderTokens(tokens: any[], context: Context, partials?: any, originalTemplate?: any, config?: any): string;
+       │ 	                                                         ^^^
+    32 │ }
+    33 │ 
+  
+  i any disables many type checking rules. Its use should be avoided.
+  
+
+mustache.d.ts:31:83 lint/suspicious/noExplicitAny ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+  × Unexpected any. Specify a different type.
+  
+    29 │ 	parse(template: string, tags?: string[]): any[];
+    30 │ 	render(template: string, view: any, partials?: any, config?: any): string;
+  > 31 │ 	renderTokens(tokens: any[], context: Context, partials?: any, originalTemplate?: any, config?: any): string;
+       │ 	                                                                                 ^^^
+    32 │ }
+    33 │ 
+  
+  i any disables many type checking rules. Its use should be avoided.
+  
+
+mustache.d.ts:31:97 lint/suspicious/noExplicitAny ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+  × Unexpected any. Specify a different type.
+  
+    29 │ 	parse(template: string, tags?: string[]): any[];
+    30 │ 	render(template: string, view: any, partials?: any, config?: any): string;
+  > 31 │ 	renderTokens(tokens: any[], context: Context, partials?: any, originalTemplate?: any, config?: any): string;
+       │ 	                                                                                               ^^^
+    32 │ }
+    33 │ 
+  
+  i any disables many type checking rules. Its use should be avoided.
+  
+
+mustache.js:668:8 lint/suspicious/noShadowRestrictedNames ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+  × Do not shadow the global "escape" property.
+  
+    667 │ Writer.prototype.escapedValue = function escapedValue(token, context, config) {
+  > 668 │ 	const escape = this.getConfigEscape(config) || mustache.escape;
+        │ 	      ^^^^^^
+    669 │ 	const value = context.lookup(token[1]);
+    670 │ 	return value != null
+  
+  i Consider renaming this variable. It's easy to confuse the origin of variables when they're named after a known global.
+  
+
+Checked 5 files in 10ms. No fixes applied.
+Found 18 errors.
+check ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+  × Some errors were emitted while running checks.
+  
+
