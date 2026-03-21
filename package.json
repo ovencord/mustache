@@ -1,6 +1,6 @@
 {
 	"name": "@ovencord/mustache",
-	"version": "1.0.1",
+	"version": "1.0.2",
 	"repository": {
 		"type": "git",
 		"url": "https://github.com/ovencord/mustache.git"
@@ -43,8 +43,8 @@
 	},
 	"license": "MIT",
 	"devDependencies": {
-		"@biomejs/biome": "2.4.4",
+		"@biomejs/biome": "2.4.8",
 		"@types/bun": "latest",
-		"typescript": "^5.9.3"
+		"typescript": "5.9.3"
 	}
 }
