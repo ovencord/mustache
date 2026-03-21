@@ -775,11 +775,11 @@ mustache.Writer = Writer;
 
 export default mustache;
 export {
+	Context,
+	escapeHtml as escape,
 	mustache,
 	parseTemplate as _parseTemplate, // Exposed for testing if needed, though not standard
-	Scanner,
-	Context,
-	Writer,
-	escapeHtml as escape,
 	parseTemplate,
+	Scanner,
+	Writer,
 };

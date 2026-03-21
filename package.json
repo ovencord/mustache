@@ -37,7 +37,7 @@
 	},
 	"scripts": {
 		"lint": "biome lint .",
-		"format": "biome format . --write",
+		"format": "biome check --write .",
 		"check": "biome check .",
 		"typecheck": "tsc --noEmit"
 	},
