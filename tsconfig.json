@@ -12,5 +12,5 @@
 		"skipLibCheck": true,
 		"forceConsistentCasingInFileNames": true
 	},
-	"include": ["mustache.js", "mustache.d.ts", "eslint.config.mjs"]
+	"include": ["mustache.js", "mustache.d.ts"]
 }
