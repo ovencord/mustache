@@ -1,7 +1,15 @@
 # 𝗠 𝗨 𝗦 𝗧 𝗔 𝗖 𝗛 𝗘
 >  mustache.js - Logic-less {{mustache}} templates with JavaScript
 
-<p align="center"><a href="https://github.com/sponsors/LuigiColantuono"><img src="https://img.shields.io/github/sponsors/LuigiColantuono?style=social"></a> <a href="https://paypal.me/l0g4n7"><img src="https://img.shields.io/badge/💖-Support-ff69b4"></a> <img src="https://img.shields.io/npm/v/@ovencord/mustache"> <img src="https://img.shields.io/npm/dm/@ovencord/mustache?label=downloads"> <img src="https://img.shields.io/npm/l/@ovencord/mustache"> <img src="https://img.shields.io/github/repo-size/ovencord/mustache"> <a href="https://github.com/ovencord/mustache"><img src="https://img.shields.io/badge/Bun-Networking-black?logo=bun"></a></p>
+<p align="left">
+  <a href="https://paypal.me/l0g4n7">
+    <img src="https://img.shields.io/badge/💖-Support-ff69b4"></a> 
+  <img src="https://img.shields.io/npm/v/@ovencord/mustache"> 
+  <img src="https://img.shields.io/npm/dm/@ovencord/mustache?label=downloads"> 
+  <img src="https://img.shields.io/npm/l/@ovencord/mustache"> 
+  <img src="https://saizu.dev/badge/ovencord/mustache?type=gzip" alt="gzip size">
+  <img src="https://saizu.dev/badge/ovencord/mustache?type=install" alt="install size">
+</p>
 
 <div align="center">
   <img src="https://github.com/user-attachments/assets/70e8758e-f363-478a-a013-fd46ca3cf3ec" alt="Buncord Logo" width="180"/>
@@ -22,8 +30,8 @@ Stop carrying the weight of 2015. **@ovencord/mustache** is a stripped-down, pur
 
 | Package | Unpacked Size | Dependencies | Total Install |
 | :--- | :--- | :--- | :--- |
-| **mustache** | ~114 kB | Legacy Bloat | ~114 kB |
-| **@ovencord/mustache** | **~24.1 kB** | **NONE** | **~24.1 kB** |
+| **mustache** | ~111 kB | Legacy Bloat | ~111 kB |
+| **@ovencord/mustache** | **~28 kB** | **NONE** | **~28 kB** |
 
 **~79% smaller than the original!**
 
